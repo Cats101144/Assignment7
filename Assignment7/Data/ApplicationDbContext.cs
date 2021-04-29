@@ -15,6 +15,8 @@ namespace Assignment7.Data
         {
         }
 
+        public DbSet<CatAppointmentSetup> CatAppointmentSetups { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

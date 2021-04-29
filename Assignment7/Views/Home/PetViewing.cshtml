@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "PetViewing";
+}
+
+<h2>View Our Pets Here!</h2>
+
+<p>All the pets located on this page are adoptable and you are able to schedule a meeting for them before the end of the next week! 
+    We constantly add any new pets we receive into this slideshow. So be sure to check back frequently as you might find someone you just won't be able to live without!</p>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/princess.jpg" alt="Princess" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Princess was tired after the long week. Here she is falling asleep before she could even turn on the TV in the break room!
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/neku.jpg" alt="Neku" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Neku is going to have a very eventful birthday today and he cant WAIT for someone to read a book to him!
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/midnight.jpg" alt="Midnight" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Midnight isn't very friendly with new people. But she will give you a try if you try reading her favorite book!
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>

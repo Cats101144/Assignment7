@@ -11,14 +11,16 @@
 }
 
 /* Carousel */
-.carousel-caption p {
+.carousel-caption {
+    color: #000;
     font-size: 20px;
     line-height: 1.4;
 }
 
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
-    width: 100%;
+    width: 200%;
+    margin:auto;
 }
 
 /* QR code generator */

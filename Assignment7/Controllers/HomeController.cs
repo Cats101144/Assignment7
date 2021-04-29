@@ -15,18 +15,57 @@ namespace Assignment7.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult PetViewing()
         {
-            ViewData["Message"] = "Your application description page.";
+            return View();
+        }
+        
+        public IActionResult Employment()
+        {
+            return View();
+        }
+
+        public IActionResult Support()
+        {
+            return View();
+        }
+
+        public IActionResult Events()
+        {
 
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Benefits()
         {
-            ViewData["Message"] = "Your contact page.";
 
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult CatAppointmentSetup()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CatAppointmentSetup(CatAppointmentSetup userCatAppointment)
+        {
+            if (ModelState.IsValid)
+            {
+                CatMeetingRepository.AddAppointment(userCatAppointment);
+
+                return View("CatAppointmentThankYou", userCatAppointment);
+            }
+            else
+            {
+                return View();
+            }
+        }
+
+        public IActionResult ListCatAppointment()
+        {
+            return View(CatMeetingRepository.UserCatAppointments);
         }
 
         public IActionResult Error()
